@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Munazim Ashraf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  document.querySelectorAll('nav a:not(.home-link)').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const target = this.getAttribute('href');
+      const current = window.location.pathname.split('/').pop() || 'index.html';
+
+      if (current === target) {
+        e.preventDefault();
+        window.location.href = 'index.html';
+      }
+    });
+  });
+</script>
+
+
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="brand-wrapper">
+    <span class="brand-bar"></span>
+    <span class="brand-name">Munazim Ashraf</span>
+    <span class="brand-slash">/</span>
+    <span class="brand-role">CYBERSECURITY STUDENT</span>
+  </div>
+
+<nav>
+  <a href="index.html" class="home-link">HOME</a>
+
+  <a href="about.html">ABOUT ME</a>
+  <a href="resume.html">RESUME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+
+</header>
+
+<!-- PROJECTS SECTION -->
+<section class="projects-section">
+  <h1>Projects</h1>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <h3>Vulnerability Scanner</h3>
+      <p>
+        A basic Python-based vulnerability scanner that detects open ports,
+        weak services, and misconfigurations using Nmap automation.
+      </p>
+      <span class="project-tag">Cybersecurity</span>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <h3>Password Strength Analyzer</h3>
+      <p>
+        A tool that evaluates password strength and simulates brute force
+        attempts to demonstrate real world risks.
+      </p>
+      <span class="project-tag">Security Tool</span>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <h3>Linux Hardening Script</h3>
+      <p>
+        A Bash script that automates Linux system hardening by disabling
+        unnecessary services and applying security policies.
+      </p>
+      <span class="project-tag">Linux</span>
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+<section class="projects-section fade-up">
+
+
+  <div class="projects-grid">
+
+    <div class="project-card fade-up">
+      <h3>Web Application Security Assessment</h3>
+      <p>
+        Security testing of vulnerable web applications based on OWASP Top 10.
+        Focused on injection flaws, authentication, and session management.
+      </p>
+      <span class="project-tag">Web Security</span>
+    </div>
+
+    <div class="project-card fade-up">
+      <h3>Linux Server Hardening</h3>
+      <p>
+        Implemented system hardening techniques including firewall rules,
+        SSH security, user permissions, and monitoring.
+      </p>
+      <span class="project-tag">Linux Security</span>
+    </div>
+
+    <div class="project-card fade-up">
+      <h3>Network Traffic Analysis</h3>
+      <p>
+        Analyzed network packets to identify suspicious behavior, DNS misuse,
+        and unauthorized communication.
+      </p>
+      <span class="project-tag">Networking</span>
+    </div>
+
+    <div class="project-card fade-up">
+      <h3>Vulnerability Assessment & Reporting</h3>
+      <p>
+        Conducted vulnerability scans and documented findings with severity
+        analysis and remediation recommendations.
+      </p>
+      <span class="project-tag">Risk Analysis</span>
+    </div>
+
+    <div class="project-card fade-up">
+      <h3>Capture The Flag (CTF)</h3>
+      <p>
+        Solved hands-on cybersecurity challenges involving web exploitation,
+        privilege escalation, and system security.
+      </p>
+      <span class="project-tag">Hands-On</span>
+    </div>
+
+    <div class="project-card fade-up">
+      <h3>Security Automation Scripts</h3>
+      <p>
+        Developed automation scripts to assist with security tasks such as
+        port scanning, log parsing, and alerting.
+      </p>
+      <span class="project-tag">Automation</span>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

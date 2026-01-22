@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Munazim Ashraf</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<script>
+  document.querySelectorAll('nav a:not(.home-link)').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const target = this.getAttribute('href');
+      const current = window.location.pathname.split('/').pop() || 'index.html';
+
+      if (current === target) {
+        e.preventDefault();
+        window.location.href = 'index.html';
+      }
+    });
+  });
+</script>
+
+
+<body>
+
+<header class="nav">
+  <div class="brand-wrapper">
+    <span class="brand-bar"></span>
+    <span class="brand-name">Munazim Ashraf</span>
+    <span class="brand-slash">/</span>
+    <span class="brand-role">CYBERSECURITY STUDENT</span>
+  </div>
+
+<nav>
+  <a href="index.html" class="home-link">HOME</a>
+
+  <a href="about.html">ABOUT ME</a>
+  <a href="resume.html">RESUME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+
+</header>
+
+<section class="contact-section">
+  <h1>Contact</h1>
+  <p class="contact-sub">
+    Let’s connect. Reach me directly or through socials.
+  </p>
+
+  <div class="contact-socials">
+
+    <a href="mailto:munazimashrafbhat@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.instagram.com/munazim.b" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1BcjxhDf9o/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/munazim-ashraf-bhat-812180202" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+  </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
