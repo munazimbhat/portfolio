@@ -1168,3 +1168,77 @@ p a:hover {
   padding: 6px 0;
   color: #444;
 }
+/* ================= MOBILE FIX ================= */
+@media (max-width: 900px) {
+
+  /* NAV */
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .nav nav {
+    gap: 14px;
+  }
+
+  .nav nav a {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .bg-block {
+    display: none;
+  }
+
+  /* PROFILE CARD */
+  .profile-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* HERO TEXT */
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 44px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  /* BUTTONS */
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 0 20px;
+  }
+
+  .about-section h2 {
+    font-size: 32px;
+  }
+
+  /* PROJECT CARDS */
+  .projects-section {
+    padding: 0 20px;
+  }
+
+}
+@media (max-width: 600px) {
+  .nav nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
